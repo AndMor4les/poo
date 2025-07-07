@@ -3,14 +3,14 @@
  */
 package uni1a;
 
-import java.util.List;
+
 
 // Subclase SerieDeTV que extiende de ContenidoAudiovisual
 public class SerieDeTV extends ContenidoAudiovisual {
     //private int temporadas;
-    private List<Temporada> temporadas;
+    private int temporadas;
 
-    public SerieDeTV(String titulo, int duracionEnMinutos, String genero, List<Temporada> temporadas) {
+    public SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas) {
         super(titulo, duracionEnMinutos, genero);
         this.temporadas = temporadas;
     } 
@@ -22,7 +22,7 @@ public class SerieDeTV extends ContenidoAudiovisual {
         System.out.println("Título: " + getTitulo());
         System.out.println("Duración en minutos: " + getDuracionEnMinutos());
         System.out.println("Género: " + getGenero());
-        System.out.println("Temporadas: " + this.temporadas.size());      
+        System.out.println("Temporadas: " + this.temporadas);      
         System.out.println();
     }
 }
